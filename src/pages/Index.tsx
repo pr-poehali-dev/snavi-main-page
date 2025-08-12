@@ -1,28 +1,13 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import Icon from "@/components/ui/icon";
+import Navigation from "@/components/Navigation";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-white to-gray-50">
       {/* Navigation */}
-      <nav className="backdrop-blur-md bg-white/80 border-b border-gray-200/50 sticky top-0 z-50">
-        <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <div className="flex items-center space-x-3">
-            <div className="w-10 h-10 bg-gradient-to-r from-primary to-secondary rounded-lg flex items-center justify-center">
-              <Icon name="Satellite" className="w-6 h-6 text-black" />
-            </div>
-            <span className="text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-              СНАВИ
-            </span>
-          </div>
-          <div className="hidden md:flex space-x-6">
-            <a href="#about" className="text-gray-700 hover:text-primary transition-colors">О компании</a>
-            <a href="#services" className="text-gray-700 hover:text-primary transition-colors">Услуги</a>
-            <a href="#contact" className="text-gray-700 hover:text-primary transition-colors">Контакты</a>
-          </div>
-        </div>
-      </nav>
+      <Navigation />
 
       {/* Hero Section */}
       <section className="py-24 px-4">
